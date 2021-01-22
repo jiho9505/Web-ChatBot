@@ -18,8 +18,6 @@ function Footer() {
                <span>문의 사항 : findgooddoctors@naver.com</span>
                &nbsp;&nbsp;
                <span>|</span>
-               &nbsp;&nbsp;
-               <Link to="/privacy"><span>개인정보처리방침</span></Link>
                
                &nbsp;&nbsp;
            </div>
