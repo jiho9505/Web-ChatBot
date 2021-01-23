@@ -1,9 +1,11 @@
+/*
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 import { loginUser } from "../../../_actions/user_actions";
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { Form, Icon, Input, Button,  Typography } from 'antd';
+import { Form, Input, Button,  Typography } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 
@@ -80,7 +82,7 @@ function LoginPage(props) {
               <Form.Item required>
                 <Input
                   id="email"
-                  prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                  prefix={<UserOutlined style={{ color: 'rgba(0,0,0,.25)' }}/>}
                   placeholder="이메일을 입력해주세요"
                   type="email"
                   value={values.email}
@@ -141,3 +143,4 @@ function LoginPage(props) {
 export default withRouter(LoginPage);
 
 
+*/

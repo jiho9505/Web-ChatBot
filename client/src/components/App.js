@@ -9,13 +9,17 @@ import { LoadingOutlined } from '@ant-design/icons';
 
 const LoginPage = React.lazy(() => import('./views/LoginPage/LoginPage.js'));
 const NotFound = React.lazy(() => import('./views/NotFound/NotFound'));
-const RegisterPage = React.lazy(() => import('./views/RegisterPage/RegisterPage'));
 
 
 
 function App() {
   const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
 
+  /*
+    <Route exact path="/login" component={Auth(LoginPage, false)} />
+    <Route exact path="/:notfound" component={Auth(NotFound, null)} />
+
+  */
   return (
  
     <Suspense fallback={(<div style={{display:'flex', marginTop:'200px', justifyContent:'center', alignItems: 'center'}}>
@@ -23,16 +27,13 @@ function App() {
       
       <NavBar/>
       
+      <br/>
+      <br/>
       
       <div style={{ minHeight: 'calc(100vh - 80px)' }}>
         
         <Switch>
-          <Route exact path="/" component={Auth(LandingPage, null)} />
-          <Route exact path="/login" component={Auth(LoginPage, false)} />
-          <Route exact path="/register" component={Auth(RegisterPage, false)} />
-          <Route exact path="/:notfound" component={Auth(NotFound, null)} />
-          
-          
+          <Route exact path="/" component={LandingPage} />
         </Switch>
         
       </div>
