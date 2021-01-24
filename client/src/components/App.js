@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Auth from "../hoc/auth";
 import LandingPage from "./views/LandingPage/LandingPage.js";
+import PathPage from "./views/PathPage/PathPage"
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 import { Spin } from 'antd';
@@ -27,13 +28,13 @@ function App() {
       
       <NavBar/>
       
-      <br/>
-      <br/>
+      <br/><br/><br/><br/>
       
-      <div style={{ minHeight: 'calc(100vh - 80px)' }}>
+      <div style={{ minHeight: 'calc(100vh - 80px)'}}>
         
         <Switch>
           <Route exact path="/" component={LandingPage} />
+          <Route exact path="/path" component={PathPage} />
         </Switch>
         
       </div>
