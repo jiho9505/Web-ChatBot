@@ -17,10 +17,14 @@
 }
 
 #maps-getting-started-controlled{
-  display: flex;
-  flex-wrap: 1;
-  width: 30%;
-  height: 300px;
+  width: 600px;
+  height: 400px;
+}
+
+.map__border{
+  display : inline-block;
+  border: 1px solid #eee;
+
 }
 
 @keyframes pulse {

@@ -12,7 +12,7 @@ function RightMenu(props) {
         
         </Menu.Item>
         <Menu.Item key="come">
-          <Link to="/login">오시는 길</Link>
+          <Link to="/path">오시는 길</Link>
         
         </Menu.Item>
         <Menu.Item key="prod">

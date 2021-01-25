@@ -7,7 +7,7 @@ function PathPage() {
     
 
     return (
-    <div>
+    <div className='map__border'>
       <RenderAfterNavermapsLoaded
         ncpClientId={NAVER_API_KEY} 
         error={<p>Maps Load Error</p>}
@@ -19,7 +19,7 @@ function PathPage() {
           
           defaultCenter={{ lat: 37.617054, lng: 127.177252}} // 지도 초기 위치
          
-          zoom={12} 
+          zoom={17} 
           
         >
         <Marker
