@@ -1,6 +1,8 @@
 import React from 'react'
 import Mapservice from './mapservice/mapservice'
-import { Button } from 'antd';
+import { Button , Typography} from 'antd';
+
+const { Title , Text} = Typography;
 
 function PathPage() {
     return (
@@ -16,10 +18,8 @@ function PathPage() {
             </div>
             
             <div className="path__desc">
-                <Button style={{borderRadius:'8px' , color: '#73aace'}}>오시는 길</Button>
-                <h3 style={{color: 'gray'}}>
-                    경기도 남양주시 일패동 725-1
-                </h3>
+                <Button style={{borderRadius:'8px' , color: '#73aace', fontSize : '16px' , cursor : 'default'}}>경기도 남양주시 일패동 725-1</Button>
+               
             </div>
            
             

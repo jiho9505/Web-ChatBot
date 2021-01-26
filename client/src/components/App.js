@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Auth from "../hoc/auth";
 import LandingPage from "./views/LandingPage/LandingPage.js";
 import PathPage from "./views/PathPage/PathPage"
+import ProductPage from "./views/ProductPage/ProductPage"
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 import { Spin } from 'antd';
@@ -35,6 +36,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/path" component={PathPage} />
+          <Route exact path="/product" component={ProductPage} />
+          
         </Switch>
         
       </div>
