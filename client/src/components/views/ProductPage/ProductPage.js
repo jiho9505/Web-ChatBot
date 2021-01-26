@@ -1,6 +1,9 @@
 import React from 'react'
+import Product from './Product/Product';
+
 
 function ProductPage() {
+
     return (
     <div className='pageSize'>
 
@@ -8,11 +11,10 @@ function ProductPage() {
             제품 샘플
         </h2>
         <div className='grayBorder'/>
-       
         
+        <Product />
         
-            
-        
+ 
     </div>
     )
 }
