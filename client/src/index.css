@@ -152,9 +152,6 @@ p {
   color: rgba(0, 0, 0, 0.85);
 }
 
-body {
-  
-}
 
 .landing {
   width : 75%;
@@ -275,7 +272,7 @@ input.error {
   }
 
 
-  .up_down {
+  .center {
     display: flex;
     justify-content: center;
   }

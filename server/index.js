@@ -9,7 +9,7 @@ const config = require("./config/key");
 
 
 
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 const connect = mongoose.connect(config.mongoURI,
   {
     useNewUrlParser: true, useUnifiedTopology: true,
@@ -17,6 +17,7 @@ const connect = mongoose.connect(config.mongoURI,
   })
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
+*/
 
 app.use(cors())
 
@@ -30,9 +31,9 @@ app.use(cookieParser());
 
 
 app.use('/api/users', require('./routes/users'));
-
+app.use('/api/dialogflow', require('./routes/dialogflow'));
 //use this to show the image you have in node js server to client (react js)
-app.use('/storeImages', express.static('storeImages'));
+
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {

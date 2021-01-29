@@ -1,8 +1,6 @@
 import React from 'react'
 import Mapservice from './mapservice/mapservice'
-import { Button , Typography} from 'antd';
-
-const { Title , Text} = Typography;
+import { Button } from 'antd';
 
 function PathPage() {
     return (

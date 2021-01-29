@@ -20,7 +20,7 @@ function RightMenu(props) {
         
         </Menu.Item>
         <Menu.Item key="counsel">
-          <Link to="/login">상담 요청</Link>
+          <Link to="/counsel">견적 요청</Link>
         
         </Menu.Item>
 

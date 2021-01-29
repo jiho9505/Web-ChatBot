@@ -2,8 +2,6 @@ import React from 'react'
 import { Col, Card, Row } from 'antd';
 import ProductImage from '../ProductImage/sample.jpg';
 
-const { Meta } = Card;
-
 function Product() {
 
     return (
@@ -32,10 +30,6 @@ function Product() {
                     <Card
                         cover={<img src={`${ProductImage}`} />}
                     >
-                        <Meta
-
-                            description={'금속 샘플 desc'}
-                        />
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
