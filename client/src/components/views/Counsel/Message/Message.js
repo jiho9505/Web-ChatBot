@@ -7,7 +7,7 @@ import {
 
 function Message(props) {
 
-    const AvatarSrc = props.who ==='bot' ? <RobotOutlined /> : <SmileTwoTone />
+    const AvatarSrc = props.who ==='AI 상담요원' ? <RobotOutlined /> : <SmileTwoTone />
 
     return (
         <List.Item style={{ padding: '1rem' }}>

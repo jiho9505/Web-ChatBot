@@ -109,6 +109,10 @@
     margin-right: 0px;
   }
 
+  .menu {
+    justify-content: center;
+  }
+
   .menu__mobile-button {
     display: inline-block !important;
     background-color: white;
@@ -116,6 +120,9 @@
     border-color: gray;
   }
 
+  .menu__container{
+    display: none;
+  }
   .menu_left,
   .menu_rigth {
     display: none;

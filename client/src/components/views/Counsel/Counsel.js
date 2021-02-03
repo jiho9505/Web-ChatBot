@@ -5,8 +5,6 @@ import Message from './Message/Message';
 function Counsel() {
     
     const [allMessage, setallMessage] = useState([])
-    
-    //const messagesFromRedux = useSelector(state => state.message.messages)
 
     useEffect(() => {
 
@@ -17,7 +15,7 @@ function Counsel() {
 
     const textQuery = async (text) => {
 
-        let conversation = {
+        let conversations = {
             who: '손님',
             content: {
                 text: {
@@ -25,31 +23,30 @@ function Counsel() {
                 }
             }
         }
-
-        setallMessage([...allMessage,conversation])
-        // console.log('text I sent', conversation)
-
-        // We need to take care of the message Chatbot sent 
+    
+       
+    
         const textQueryVariables = {
             text
         }
+
         try {
-            //I will send request to the textQuery ROUTE 
+            
             const response = await Axios.post('/api/dialogflow/textQuery', textQueryVariables)
 
             for (let content of response.data.fulfillmentMessages) {
 
-                conversation = {
+                let conversation = {
                     who: 'AI 상담요원',
                     content: content
                 }
-
-                setallMessage([...allMessage,conversation])
-            }
+            
+                setallMessage([...allMessage,conversations,conversation])
+            } 
 
 
         } catch (error) {
-            conversation = {
+            let conversation = {
                 who: 'AI 상담요원',
                 content: {
                     text: {
@@ -58,7 +55,7 @@ function Counsel() {
                 }
             }
 
-            setallMessage([...allMessage,conversation])
+            setallMessage([...allMessage,conversations,conversation])
 
 
         }
@@ -75,7 +72,7 @@ function Counsel() {
 
             const response = await Axios.post('/api/dialogflow/eventQuery', eventQueryVariables)
             for (let content of response.data.fulfillmentMessages) {
-
+                
                 let conversation = {
                     who: 'AI 상담요원',
                     content: content
@@ -95,7 +92,7 @@ function Counsel() {
                 }
             }
             setallMessage([...allMessage,conversation])
-        }
+        }           
 
     }
 

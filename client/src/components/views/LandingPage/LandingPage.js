@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import Axios from 'axios'
+import React from 'react'
+import ImageSlider from '../../utils/ImageSlider';
 
-function LandingPage(props) {
+function LandingPage() {
     
     
     return (
-        <div className='landing'>
-            ChatBot - Start
+        <div className='pageSize'>
+            <div style={{ width: '200px',height: '200px'}}>
+                <ImageSlider/>
+            </div>
+            
             
         </div>
     )

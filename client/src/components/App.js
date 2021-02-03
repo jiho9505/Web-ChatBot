@@ -6,6 +6,7 @@ import PathPage from "./views/PathPage/PathPage"
 import ProductPage from "./views/ProductPage/ProductPage"
 import NavBar from "./views/NavBar/NavBar";
 import Counsel from "./views/Counsel/Counsel"
+import MobileNav from "./views/MobileNav/MobileNav"
 import Footer from "./views/Footer/Footer"
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
@@ -30,6 +31,7 @@ function App() {
       
       <NavBar/>
       
+      
       <br/><br/><br/><br/>
       
       <div style={{ minHeight: 'calc(100vh - 80px)'}}>
@@ -44,6 +46,9 @@ function App() {
         
       </div>
       <div className='space'></div>
+      <div className="quick">
+        <MobileNav />
+      </div>
       
       <Footer />
     </Suspense>

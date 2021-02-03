@@ -7,10 +7,6 @@ function RightMenu(props) {
 
     return (
       <Menu mode={props.mode}>
-        <Menu.Item key="hello">
-          <Link to="/login">인사말</Link>
-        
-        </Menu.Item>
         <Menu.Item key="come">
           <Link to="/path">오시는 길</Link>
         
