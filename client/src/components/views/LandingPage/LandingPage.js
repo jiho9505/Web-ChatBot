@@ -6,7 +6,12 @@ function LandingPage() {
     
     return (
         <div className='pageSize'>
-            <div style={{ width: '200px',height: '200px'}}>
+            <h2 className="pageStart">
+                대성주물
+            </h2>
+            <div className='grayBorder'/>
+            <br/>
+            <div style={{ width: '100%',height: '100%'}}>
                 <ImageSlider/>
             </div>
             

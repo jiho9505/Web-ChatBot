@@ -5,16 +5,16 @@ import b from './Images/2.jpg'
 
 function ImageSlider() {
     return (
-        <div>
+        <div style={{ margin: 'auto',maxWidth: '400px', maxHeight: '400px' }}>
 
             <Carousel autoplay>
                 
-                    <div>
-                        <img style={{ width: '100%', maxHeight: '150px' }}
+                    <div style={{ maxWidth: '200px', maxHeight: '200px' }}>
+                        <img style={{ maxWidth: '100%', maxHeight: '400px' }}
                             src={a} alt="a" />
                     </div>
-                    <div>
-                        <img style={{ width: '100%', maxHeight: '150px' }}
+                    <div style={{ maxWidth: '200px', maxHeight: '200px' }}>
+                        <img style={{ maxWidth: '100%', maxHeight: '400px' }}
                             src={b} alt="b" />
                     </div>
                 

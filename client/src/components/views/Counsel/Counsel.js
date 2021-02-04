@@ -141,10 +141,10 @@ function Counsel() {
             <br/>
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <div style={{
-                height: 700, width: 700,
+                height: 600, width: 700,
                 border: '3px solid black', borderRadius: '6px'
                 }}>
-                    <div style={{ height: 644, width: '100%', overflow: 'auto' }}>
+                    <div style={{ height: 544, width: '100%', overflow: 'auto' }}>
 
 
                         {renderMessage(allMessage)}

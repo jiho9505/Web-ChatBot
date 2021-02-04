@@ -31,8 +31,8 @@ function App() {
       
       <NavBar/>
       
-      
-      <br/><br/><br/><br/>
+      <div className="com_spacing"></div>
+      <br/><br/>
       
       <div style={{ minHeight: 'calc(100vh - 80px)'}}>
         
@@ -51,8 +51,7 @@ function App() {
       </div>
       
       <Footer />
-      <div className='space'></div>
-      <div className='space'></div>
+
     </Suspense>
   
   );
