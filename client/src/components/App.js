@@ -51,6 +51,8 @@ function App() {
       </div>
       
       <Footer />
+      <div className='space'></div>
+      <div className='space'></div>
     </Suspense>
   
   );
