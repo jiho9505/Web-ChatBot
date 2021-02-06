@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect , useRef} from 'react';
 import Axios from 'axios';
 import Message from './Message/Message';
 
 function Counsel() {
     
+    const messagesEnd = useRef(null)
     const [allMessage, setallMessage] = useState([])
 
     useEffect(() => {
 
         eventQuery('welcomeToMyWebsite')
-
+        // eventQuery 하나 더 생성할 것
     }, [])
 
 
@@ -105,15 +106,17 @@ function Counsel() {
             }
 
             textQuery(e.target.value)
-            e.target.value = "";
+            e.target.value = ""
+            
+            
+            console.log(messagesEnd)
+   
         }
     }
 
 
     const renderOneMessage = (message, i) => {
-        console.log('message', message)
-
-     
+       
         if (message.content && message.content.text && message.content.text.text) {
             return <Message key={i} who={message.who} text={message.content.text.text} />
         }
@@ -139,23 +142,16 @@ function Counsel() {
             </h2>
             <div className='grayBorder'/>
             <br/>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
-                <div style={{
-                height: 600, width: 700,
-                border: '3px solid black', borderRadius: '6px'
-                }}>
-                    <div style={{ height: 544, width: '100%', overflow: 'auto' }}>
-
+            <div className="counsel__whole">
+                <div className="counsel__wholechat">
+                    <div className="counsel__chat">
 
                         {renderMessage(allMessage)}
-
+                        <div ref={messagesEnd}></div>
 
                     </div>
                     <input
-                        style={{
-                            margin: 0, width: '100%', height: 50,
-                            borderRadius: '4px', padding: '5px', fontSize: '1rem'
-                        }}
+                        className="counsel__input"
                         placeholder="입력해주시기 바랍니다..."
                         onKeyPress={keyPressHanlder}
                         type="text"

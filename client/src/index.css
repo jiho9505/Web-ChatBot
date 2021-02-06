@@ -242,11 +242,47 @@ input.error {
 
   .quick {
     display: none;
-}
+ }
 
+ .counsel__whole {
+   display: flex;
+   justify-content: center;
+   width: 100%
+ }
+
+ .counsel__wholechat {
+    height: 600px;
+    max-width: 700px;
+    width:100%;
+    border: 3px solid black;
+    border-radius: 6px;
+ }
+
+ .counsel__chat {
+    height: 544px;
+    width: 100%;
+    overflow-y: scroll;
+ }
+
+ .counsel__input {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1rem;
+ }
 
 @media (max-width: 767px) {
 
+  .counsel__wholechat {
+    height: 500px;
+ }
+
+ .counsel__chat {
+    height: 444px;
+ }
+ 
   .quick {
     display: flex;
     position: fixed;
@@ -275,7 +311,7 @@ input.error {
   }
 
   .spacing{
-    height: 10px;
+    height: 90px;
   }
 
 
@@ -367,7 +403,7 @@ input.error {
   }
 
   .spacing{
-    height: 10px;
+    height: 90px;
   }
 
   .demo-loadmore-list {
