@@ -13,6 +13,14 @@ function Counsel() {
         // eventQuery 하나 더 생성할 것
     }, [])
 
+    useEffect(() => {
+
+        messagesEnd.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+    }, [allMessage])
+
+ 
+
+
 
     const textQuery = async (text) => {
 
@@ -107,10 +115,6 @@ function Counsel() {
 
             textQuery(e.target.value)
             e.target.value = ""
-            
-            
-            console.log(messagesEnd)
-   
         }
     }
 

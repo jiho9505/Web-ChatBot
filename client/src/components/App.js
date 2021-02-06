@@ -21,8 +21,8 @@ function App() {
       
       <NavBar/>
       
-      <div className="com_spacing"></div>
-      <br/><br/>
+     
+      <br/>
       
       <div style={{ minHeight: 'calc(100vh - 80px)'}}>
         
