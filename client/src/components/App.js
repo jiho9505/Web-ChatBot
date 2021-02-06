@@ -6,6 +6,7 @@ import ProductPage from "./views/ProductPage/ProductPage"
 import NavBar from "./views/NavBar/NavBar";
 import Counsel from "./views/Counsel/Counsel"
 import MobileNav from "./views/MobileNav/MobileNav"
+import NotFound from "./views/NotFound/NotFound"
 import Footer from "./views/Footer/Footer"
 import { Spin } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
@@ -31,6 +32,8 @@ function App() {
           <Route exact path="/path" component={PathPage} />
           <Route exact path="/product" component={ProductPage} />
           <Route exact path="/counsel" component={Counsel} />
+          <Route exact path="/:url" component={NotFound} />
+          
           
         </Switch>
         

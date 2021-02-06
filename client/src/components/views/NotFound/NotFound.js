@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 function NotFound() {
     return (
         <div>
+            <br/><br/><br/>
             <Result
                 status="404"
                 title="404"
