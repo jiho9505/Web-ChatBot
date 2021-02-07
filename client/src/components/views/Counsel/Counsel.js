@@ -8,14 +8,10 @@ function Counsel() {
     const [allMessage, setallMessage] = useState([])
 
     useEffect(() => {
-
         eventQuery('welcomeToMyWebsite')
-        eventQuery('welcomeToMyWebsite2')
-        eventQuery('welcomeToMyWebsite3')
     }, [])
 
     useEffect(() => {
-
         messagesEnd.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
     }, [allMessage])
 
@@ -50,7 +46,7 @@ function Counsel() {
                     who: 'AI 상담요원',
                     content: content
                 }
-            
+               
                 setallMessage([...allMessage,conversations,conversation])
             } 
 
@@ -81,14 +77,43 @@ function Counsel() {
         try {
 
             const response = await Axios.post('/api/dialogflow/eventQuery', eventQueryVariables)
+            
             for (let content of response.data.fulfillmentMessages) {
+                let content1 = {
+                    text : {
+                        text : content.payload.fields.conv1.stringValue
+                    }
+                } 
                 
-                let conversation = {
-                    who: 'AI 상담요원',
-                    content: content
+                let content2 = {
+                    text : {
+                        text : content.payload.fields.conv2.stringValue
+                    }
+                } 
+
+                let content3 = {
+                    text : {
+                        text : content.payload.fields.conv3.stringValue
+                    }
                 }
 
-                setallMessage([...allMessage,conversation])
+                let conversation = {
+                    who: 'AI 상담요원',
+                    content: content1
+                }
+
+                let conversation1 = {
+                    who: 'AI 상담요원',
+                    content: content2
+                }
+
+                let conversation2 = {
+                    who: 'AI 상담요원',
+                    content: content3
+                }
+              
+            
+                setallMessage([...allMessage,conversation,conversation1,conversation2])
             }
 
 

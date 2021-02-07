@@ -55,7 +55,7 @@ router.post('/eventQuery', async (req, res) => {
 
     const result = responses[0].queryResult;
     console.log(`  Query: ${result.queryText}`);
-    console.log(`  Response: ${result.fulfillmentText}`);
+    console.log(`  Response: ${result.fulfillmentMessages}`);
 
     res.send(result)
 })
