@@ -10,7 +10,8 @@ function Counsel() {
     useEffect(() => {
 
         eventQuery('welcomeToMyWebsite')
-        // eventQuery 하나 더 생성할 것
+        eventQuery('welcomeToMyWebsite2')
+        eventQuery('welcomeToMyWebsite3')
     }, [])
 
     useEffect(() => {
