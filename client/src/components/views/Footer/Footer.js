@@ -1,27 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <div style={{
-            height: '80px', display: 'flex',
-            flexDirection: 'column', alignItems: 'center',
-            justifyContent: 'center', fontSize:'12px' , backgroundColor:'black' , color:'white',
-            
-        }}>
+        <div className='footer__whole'>
                
-           <div>
-               <span>Copyright 2020 findgooddoctors.com All Rights Reserved.</span> 
-               &nbsp;
-               <span className='up_down'>Since 2020.11.03</span>
-            </div>
-           <div>
-               <span>문의 사항 : findgooddoctors@naver.com</span>
-               &nbsp;&nbsp;
-               <span>|</span>
-               
-               &nbsp;&nbsp;
-           </div>
+    
+            <h2 style={{color:'white', textAlign: 'center'}}>전화상담(📞) <br/> 010 - 3722 - 5588</h2>
+            <span>Copyright 2021 All Rights Reserved.</span>
+            <span className='up_down'>Since 2021.02.12</span>
+    
         </div>
     )
 }
