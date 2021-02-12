@@ -13,9 +13,10 @@ function LandingPage() {
             </h2>
             
             <br/>
+            { ImageSlider && 
             <div style={{ width: '100%',height: '100%'}}>
                 <ImageSlider/>
-            </div>
+            </div> }
             
             <br/><br/>
   
