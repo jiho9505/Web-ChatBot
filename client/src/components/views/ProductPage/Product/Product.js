@@ -23,79 +23,79 @@ function Product() {
 
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S13}`} />}
+                        cover={<img src={S13} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S12}`} />}
+                        cover={<img src={S12} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S11}`} />}
+                        cover={<img src={S11} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S10}`} />}
+                        cover={<img src={S10} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S9}`} />}
+                        cover={<img src={S9} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S8}`} />}
+                        cover={<img src={S8} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S7}`} />}
+                        cover={<img src={S7} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S6}`} />}
+                        cover={<img src={S6} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S5}`} />}
+                        cover={<img src={S5} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S4}`} />}
+                        cover={<img src={S4}/>}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S3}`} />}
+                        cover={<img src={S3} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S2}`} />}
+                        cover={<img src={S2} />}
                     >
                     </Card>       
                 </Col>
                 <Col lg={6} md={8} xs={12}>
                     <Card
-                        cover={<img src={`${S1}`} />}
+                        cover={<img src={S1} />}
                     >
                     </Card>       
                 </Col>
