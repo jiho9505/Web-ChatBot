@@ -13,16 +13,16 @@ function LandingPage() {
             </h2>
             
             <br/>
-            { ImageSlider && 
+     
             <div style={{ width: '100%',height: '100%'}}>
                 <ImageSlider/>
-            </div> }
+            </div> 
             
             <br/><br/>
   
             <div className="land__write">
                 <div className="center">
-                    <img className="land__avatar" src={HomeImage} alt="대성주물"></img>
+                    <img className="land__avatars" src={HomeImage} alt="대성주물"></img>
                     <div>
                         <h1>안녕하세요,<br/> 대성주물입니다</h1>
                     </div>

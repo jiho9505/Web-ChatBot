@@ -12,17 +12,17 @@ function ImageSlider() {
                      
                     <div>
                     {a &&
-                        <img className="Imgslider__img"
+                        <img className="Imgslider__imgs"
                             src={a} alt="a" />}
                     </div>
                     <div>
                     {b &&
-                        <img className="Imgslider__img"
+                        <img className="Imgslider__imgs"
                             src={b} alt="b" />}
                     </div>
                     <div >
                     {c &&
-                        <img className="Imgslider__img"
+                        <img className="Imgslider__imgs"
                             src={c} alt="c" />}
                     </div>
                 
