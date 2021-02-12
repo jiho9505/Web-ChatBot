@@ -7,23 +7,26 @@ import c from './Images/3.jpg'
 function ImageSlider() {
     return (
         <div style={{ margin: 'auto', width: '100%', height: '100%' }}>
-            {a && b && c &&
+           
             <Carousel autoplay>
                      
-                    <div >
+                    <div>
+                    {a &&
                         <img className="Imgslider__img"
-                            src={a} alt="a" />
+                            src={a} alt="a" />}
                     </div>
                     <div>
+                    {b &&
                         <img className="Imgslider__img"
-                            src={b} alt="b" />
+                            src={b} alt="b" />}
                     </div>
                     <div >
+                    {c &&
                         <img className="Imgslider__img"
-                            src={c} alt="c" />
+                            src={c} alt="c" />}
                     </div>
                 
-            </Carousel> }
+            </Carousel> 
         </div>
     )
 }
