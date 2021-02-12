@@ -5,19 +5,6 @@ const cors = require('cors')
 
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-const config = require("./config/key");
-
-
-
-/*const mongoose = require("mongoose");
-const connect = mongoose.connect(config.mongoURI,
-  {
-    useNewUrlParser: true, useUnifiedTopology: true,
-    useCreateIndex: true, useFindAndModify: false
-  })
-  .then(() => console.log('MongoDB Connected...'))
-  .catch(err => console.log(err));
-*/
 
 app.use(cors())
 
