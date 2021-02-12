@@ -20,85 +20,99 @@ function Product() {
     return (
         <div>
             <Row gutter={[16, 16]}>
-
+                {S13 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S13} />}
                     >
                     </Card>       
                 </Col>
+                }
+                {S12 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S12} />}
                     >
                     </Card>       
                 </Col>
+                }
+                {S11 &&
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S11} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S10 &&
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S10} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S9 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S9} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S8 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S8} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S7 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S7} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S6 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S6} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S5 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S5} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S4 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S4}/>}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S3 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S3} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S2 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S2} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
+                {S1 && 
                 <Col lg={6} md={8} xs={12}>
                     <Card
                         cover={<img src={S1} />}
                     >
                     </Card>       
-                </Col>
+                </Col> }
 
 
             </Row>

@@ -7,9 +7,9 @@ import c from './Images/3.jpg'
 function ImageSlider() {
     return (
         <div style={{ margin: 'auto', width: '100%', height: '100%' }}>
-
+            {a && b && c &&
             <Carousel autoplay>
-                
+                     
                     <div >
                         <img className="Imgslider__img"
                             src={a} alt="a" />
@@ -23,7 +23,7 @@ function ImageSlider() {
                             src={c} alt="c" />
                     </div>
                 
-            </Carousel>
+            </Carousel> }
         </div>
     )
 }
