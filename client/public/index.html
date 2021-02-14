@@ -9,6 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <meta name="naver-site-verification" content="5e3a4c210c656dc9fc176968357ba57d616bb722" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,7 +26,14 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>대성주물</title>
-
+    <script>
+      const domain1 = "www.dsjumul.com";
+      const domain2 = "dsjumul.com";
+      const host = window.location.host;
+      if ((domain1 === host || domain2 === host) && (window.location.protocol !== "https:")){
+        window.location.href = "https://www.findgooddoctors.co.kr";
+      }
+    </script>
  
   </head>
   <body>
