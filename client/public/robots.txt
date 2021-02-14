@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: https://www.dsjumul.com/sitemap.xml
