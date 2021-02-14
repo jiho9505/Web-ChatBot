@@ -12,7 +12,11 @@ function Counsel() {
     }, [])
 
     useEffect(() => {
-        messagesEnd.current.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        messagesEnd.current.scrollTo({
+            top: 10000,
+            behavior: 'smooth'
+          });
+
     }, [allMessage])
 
  
@@ -174,10 +178,9 @@ function Counsel() {
             <br/>
             <div className="counsel__whole">
                 <div className="counsel__wholechat">
-                    <div className="counsel__chat">
+                    <div className="counsel__chat" ref={messagesEnd}>
 
                         {renderMessage(allMessage)}
-                        <div ref={messagesEnd}></div>
 
                     </div>
                     <input

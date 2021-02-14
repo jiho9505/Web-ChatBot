@@ -98,6 +98,11 @@ p {
   font-size: 1.5rem;
 }
 
+._pageStart{
+  margin-top: 75px;
+  font-size: 1.5rem;
+}
+
 .grayBorder{
   border : 1px solid #eee;
 }

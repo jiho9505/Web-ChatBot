@@ -9,7 +9,7 @@ function LandingPage() {
     return (
         <div className='pageSize'>
             
-            <h2 className="pageStart">    
+            <h2 className="_pageStart">    
             </h2>
             
             <br/>
