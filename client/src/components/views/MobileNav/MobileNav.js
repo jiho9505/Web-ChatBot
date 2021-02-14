@@ -10,7 +10,7 @@ function MobileNav() {
     const upScroll = () => {
         window.scrollTo( 0, 0 );
     }
-
+    
     return (
         <div className="mobnav__whole" >
             <div className="mobnav__part">
