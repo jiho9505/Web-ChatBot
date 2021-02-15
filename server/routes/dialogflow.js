@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const dialogflow = require('dialogflow');
-const structjson = require('./structjson.js');
 const config = require('../config/key');
 
 const projectId = config.googleProjectID

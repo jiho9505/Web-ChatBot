@@ -16,7 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-
 app.use('/api/dialogflow', require('./routes/dialogflow'));
 //use this to show the image you have in node js server to client (react js)
 
@@ -27,7 +26,9 @@ if (process.env.NODE_ENV === "production") {
   // Set static folder   
   // All the javascript and css files will be read and served from this folder
   app.use(express.static("client/build"));
-
+  app.get("/service-worker.js", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "../client", "src", "serviceWorker.js"));
+  });
   // index.html for all page routes    html or routing and naviagtion
   app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../client", "build", "index.html"));
