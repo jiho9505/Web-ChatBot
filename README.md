@@ -1,4 +1,4 @@
-<h1 align="center"> Simple ChatBot Project 👋</h1>
+<h1 align="center"> 아버지 공장 웹페이지 프로젝트 👋</h1>
 <p>
   <a href="https://github.com/jiho9505/project#README" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
@@ -9,14 +9,15 @@
 </p>
 
 ## 프로젝트 개발내용
-<p>- MERN Stack Project</p> 
+<p>- React와 Node.js 이용</p> 
 <p>- Using Dialogflow</p> 
 
 ## 프로젝트 개발동기
-<p>- Dialogflow를 웹과 결합하여 간단한 챗봇 서비스를 맛보고 싶었다.</p>
+<p>- 아버지 공장에 웹페이지가 없어 배운 기술로 만들어 드리고 싶었다.</p>
+<p>- Dialogflow를 웹과 결합하여 간단한 챗봇 서비스를 해보고 싶었다.</p>
 
 ## 최종 결과물
-<p>스크린샷 부분</p>
+🏠 [Homepage](https://jiho9505.github.io/Web-Portfolio/)
 <br><br/>
 ## Install
 server 와 client folder 각각
