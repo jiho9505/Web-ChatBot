@@ -11,6 +11,7 @@
 ## 프로젝트 개발내용
 <p>- React와 Node.js 이용</p> 
 <p>- Using Dialogflow</p> 
+<p>- Naver map api / Dialogflow api / Google analytics 등등 이용</p> 
 
 ## 프로젝트 개발동기
 <p>- 아버지 공장에 웹페이지가 없어 배운 기술로 만들어 드리고 싶었다.</p>
