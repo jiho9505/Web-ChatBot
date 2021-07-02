@@ -20,7 +20,8 @@
 ## 최종 결과물
 🏠 [Homepage](http://dsjumul.herokuapp.com/)
 <p>- please wait 20 seconds because this is sleep mode...</p>
-<br><br/>
+<br>
+
 ## Install
 server 와 client folder 각각
 ```sh
